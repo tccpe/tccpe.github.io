@@ -1,0 +1,142 @@
+:root {
+    --text: #FFFFFF;
+    --inactive-text: #949494;
+
+    --border: #FFFFFF;
+    --inactive-border: #949494;
+
+    --document-background: #181818;
+    --window-background: #222222;
+
+    --input-background: #292929;
+
+    --accent-button-background: rgb(50, 50, 255, 0.15);
+    --accent-button-text: rgb(87, 87, 255);
+    --accent-button-background-hover: rgb(50, 50, 255, 0.25);
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "monospace";
+    color: var(--text);
+    background-color: var(--document-background);
+
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #1d1d1d 2px, rgba(0, 0, 0, 0) 3px);
+}
+.wall-menu {
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: var(--window-background);
+}
+#wall-menu-header {
+    border-bottom: 2px solid var(--document-background);
+    height: 45px;
+    font-size: 23px;
+    line-height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.wall-menu-body {
+    height: calc(100% - 45px);
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 20px 0px 20px;
+    margin: 0px;
+}
+.coordinate-input {
+    width: 50px;
+    text-align: center;
+    background-color: var(--input-background);
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    border-radius: 4px;
+    height: 25px;
+}
+.coordinate-input:focus {
+    outline: 0px solid transparent;
+    border: 0px solid transparent;
+}
+.wall-menu-body-buttons {
+    width: max-content;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+#wall-menu-header-close {
+    transition: color .4s ease;
+    background-color: transparent;
+    color: var(--inactive-text);
+    font-size: 20px;
+    margin-left: auto;
+    border: none;
+}
+#wall-menu-header-close:hover {
+    transition: .3s ease;
+    color: var(--white);
+    cursor: pointer;
+}
+#wall-menu-body-submit {
+    transition: background .2s ease;
+    background-color: var(--accent-button-background);
+    color: var(--accent-button-text);
+    font-family: "monospace";
+    border: none;
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: normal;
+}
+#wall-menu-body-submit:hover {
+    cursor: pointer;
+    transition: background .4s ease;
+    background-color: var(--accent-button-background-hover);
+}
+#wall-menu-body-reset {
+    transition: background.2s ease;
+    background-color: rgb(158, 158, 158, 0.15);
+    color: rgb(155, 155, 155);
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+#wall-menu-body-reset:hover {
+    cursor: pointer;
+    transition: background.4s ease;
+    background-color: rgb(155, 155, 155, 0.25);
+}
+#wall-menu-activate {
+    transition: .3s ease;
+    background: transparent;
+    cursor: pointer;
+    color: var(--inactive-text);
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+#wall-menu-activate:hover {
+    transition: .4s ease;
+    color: var(--white);
+}
+.box {
+    background-color: white;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCodingCat's Collision Simultion Program</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/4931b3c0b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="playground">
+        
+    </div>
+    <button id="wall-menu-activate">
+        <i class="fa-solid fa-sliders"></i>
+    </button>
+    <div class="wall-menu">
+        <header id="wall-menu-header">
+            <p id="wall-menu-header-text">Wall Menu</p>
+            <button id="wall-menu-header-close">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </header>
+        <div class="wall-menu-body">
+            <p class="wall-menu-body-text"></p>
+            <p class="wall-menu-body-text">
+                set_wall_coordinates
+                (
+                <input id="coordinate-x" type="text" class="coordinate-input" />
+                ,
+                <input id="coordinate-y" type="text" class="coordinate-input" />
+                )
+                ;
+            </p>
+            <p class="wall-menu-body-text">
+                set_wall_dimensions
+                (
+                <input id="dimension-x" type="text" class="coordinate-input" />
+                ,
+                <input id="dimension-y" type="text" class="coordinate-input" />
+                )
+                ;
+            </p>
+            <div class="wall-menu-body-buttons">
+                <button id="wall-menu-body-reset">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button id="wall-menu-body-submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
